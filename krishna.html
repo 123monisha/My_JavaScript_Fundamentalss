@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Events Example</title>
+    <style>
+        #hoverBtn {
+            padding: 10px 20px;
+            background-color: lightblue;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1>JavaScript Events Example</h1>
+
+    <button onclick="showMsg()">Click Me (Inline)</button>
+    <br><br>
+
+    <button id="btn">Click Me (addEventListener)</button>
+    <br><br>
+
+    <button id="hoverBtn">Hover Over Me</button>
+
+    <script>
+        function showMsg() {
+            alert("Button Clicked! (Inline Event)");
+        }
+
+        let btn = document.getElementById("btn");
+        btn.addEventListener("click", function() {
+            alert("Button Clicked! (addEventListener)");
+        });
+
+        let hoverBtn = document.getElementById("hoverBtn");
+        hoverBtn.addEventListener("mouseover", function(event) {
+            hoverBtn.style.backgroundColor = "yellow";      
+            console.log("Mouse is over button at: ", event.clientX, event.clientY);
+        });
+
+        hoverBtn.addEventListener("mouseout", function() {
+            hoverBtn.style.backgroundColor = "lightblue";
+        });
+    </script>
+</body>
+</html>

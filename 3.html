@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>variables scoped</title>
+        <script>
+            if(true)
+        {
+            var x=10;
+        }
+        alert(x);
+         if(true)
+        {
+            let y=10;
+        }
+        alert(y);//it will show a message bcz using the let not possible to access outbof the function
+
+        const a=40;
+        a=50;
+        alert(a);//not possible to reassign or declare the value
+        </script>
+    </head>
+</html>

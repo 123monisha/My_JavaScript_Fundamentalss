@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>arrays in js</title>
+        <script>
+            let array1=[3,4,5,6,7];
+            alert(array1[0]);
+            alert(array1.length);
+
+            array1.push(8);
+            alert(array1);
+
+            array1.pop();
+            alert(array1);
+
+            array1.unshift(1);
+            alert(array1);
+
+            array1.shift();
+            alert(array1);
+
+            let sliced=array1.slice(0,2);
+            alert(array1);
+
+            array1.splice(1,1,99);
+            alert(array1);
+
+
+        let arr = [1, 2, 3, 4, 5];
+
+        let doubled = arr.map(num => num * 2);
+        alert("Map (doubled): " + doubled);
+
+        let evens = arr.filter(num => num % 2 === 0);
+        alert("Filter (evens): " + evens);
+
+        let sum = arr.reduce((acc, curr) => acc + curr, 0);
+        alert("Reduce (sum): " + sum);
+
+
+             
+        </script>
+    </head>
+</html>

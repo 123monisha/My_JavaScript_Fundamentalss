@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            DOM 
+        </title>
+        <script>
+            function greet()
+            {
+               document.getElementById("msg").innerHTML="hare krishna"
+            }
+
+            function greeet()
+            {
+                document.querySelector("h1").innerHTML="haree raam"
+            }
+
+            function grit()
+            {
+                let items=document.getElementsByClassName("l");
+                for(let i=0;i<=items.length;i++)
+            {
+                items[i].style.color = "red";
+            }
+            }
+        </script>
+    </head>
+    <body>
+        <h1 id="msg">original text</h1>
+        <button onclick="greet()">click here</button>
+        <button onclick="greeet()">click here</button>
+        <ul>
+            <li class="l">hello</li>
+            <li class="l">hiiiii</li>
+        </ul>
+        <button onclick="grit()">click</button>
+    </body>
+</html>

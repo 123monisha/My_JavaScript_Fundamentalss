@@ -1,0 +1,66 @@
+<!--<!DOCTYPE html>
+<html>
+<body>
+  <h2 id="title">Hello World</h2>
+  <button onclick="changeText()">Change Text</button>
+
+  <script>
+    function changeText() {
+      let heading = document.getElementById("title");
+      heading.innerHTML = "Text Changed!";  // changing content
+    }
+  </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+  <p class="msg">This is first para</p>
+  <p class="msg">This is second para</p>
+  <button onclick="changePara()">Change Para</button>
+
+  <script>
+    function changePara() {
+      let para = document.querySelector(".msg"); // first .msg
+      para.style.color = "red";  // change style
+    }
+  </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+  <p class="item">Apple</p>
+  <p class="item">Banana</p>
+  <p class="item">Mango</p>
+  <button onclick="makeGreen()">Make Green</button>
+
+  <script>
+    function makeGreen() {
+      let fruits = document.getElementsByClassName("item");
+      for (let i = 0; i < fruits.length; i++) {
+        fruits[i].style.color = "green"; // change style
+      }
+    }
+  </script>
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html>
+<body>
+  <h2 id="demo">Original Text</h2>
+  <input type="text" id="nameBox" value="Monisha">
+  <button onclick="update()">Update</button>
+
+  <script>
+    function update() {
+      document.getElementById("demo").innerHTML = "Text Updated!";
+      document.getElementById("nameBox").value = "New Name"; 
+      document.getElementById("demo").style.color = "blue"; // style
+    }
+  </script>
+</body>
+</html>

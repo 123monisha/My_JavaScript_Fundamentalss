@@ -1,0 +1,26 @@
+<script>
+  let person = {
+    name: "Monisha",
+    age: 22,
+    country: "India"
+  };
+
+  alert("Name: " + person.name);     // dot notation
+  alert("Age: " + person["age"]);    // bracket notation
+
+  let student = {
+    name: "Krishna",
+    marks: {
+      math: 90,
+      science: 85
+    },
+    hobbies: ["Singing", "Reading"]
+  };
+
+  alert("Math marks: " + student.marks.math);
+  alert("First hobby: " + student.hobbies[0]);
+
+  alert(Object.keys(student));
+  alert(Object.values(student));
+  alert(Object.entries(student));
+</script>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>functions in js</title>
+        <script>
+            function greet()
+            {
+                alert("welcome krishna!!!");
+            }
+            function add( a, b)
+            {
+                alert("addition is "+(a+b));
+            }
+
+            function defaultt(name="krishna")
+            {
+                alert(name);
+            }
+
+            let hello=function(x,y)
+            {
+                alert(x*y);
+            }
+
+            let nothing=(num)=>{
+                alert(num*num);
+            }
+            function sum(...numbers) {
+    let total = 0;
+    for (let n of numbers) {
+      total += n;
+    }
+    alert("Total: " + total);
+  }
+
+  sum(1, 2, 3);        // 6
+  sum(5, 10, 15, 20); 
+            greet();
+            add(10,20);
+            defaultt();
+            defaultt("monisha");
+            hello(6,5);
+            nothing(6);
+        </script>
+    </head>
+</html>
